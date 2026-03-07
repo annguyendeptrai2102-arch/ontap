@@ -13,4 +13,6 @@ Xây dựng giao diện đăng nhập bằng React Native (Expo) sử dụng cá
 
 ## Hình ảnh kết quả chạy ứng dụng
 
-![Kết quả](nhapsai.jpg)
+![Kết quả](nhapsai.jpg) 
+![Kết quả](nhapdung.jpg) 
+
