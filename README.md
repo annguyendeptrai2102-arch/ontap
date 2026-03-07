@@ -1,15 +1,12 @@
 # Thực hành sử dụng Components - React Native
 
 ## Thông tin sinh viên
-- Họ và tên: Đỗ Thanh Hiếu
-- Mã sinh viên: 23810310380
+- Họ và tên: nguyễn văn an
+- Mã sinh viên: 23810310355
 
 ## Mô tả bài tập
-Xây dựng giao diện đăng nhập bằng React Native (Expo) sử dụng các component cơ bản như:
-- View
-- Text
-- TextInput
-- TouchableOpacity
+Sử dụng màn hình SignIn đã thiết kế giao diện ở bài 2. Bổ sung chức năng validation theo yêu cầu.
+- Sau khi người dùng nhập số điện thoại và nhần "Tiếp tục" => Kiểm tra xem số điện thoại có đúng định dạng không và thông báo bằng popup lên màn hình
 
 ## Hình ảnh kết quả chạy ứng dụng
 
