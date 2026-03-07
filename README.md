@@ -1,4 +1,4 @@
-# Thực hành sử dụng Components - React Native
+# Thực hành validation
 
 ## Thông tin sinh viên
 - Họ và tên: nguyễn văn an
