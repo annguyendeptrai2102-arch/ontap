@@ -11,16 +11,35 @@ export default function SignIn() {
 
   const [phone, setPhone] = useState("");
 
+  const handlePhoneChange = (text) => {
+
+    // bỏ tất cả ký tự không phải số
+    let cleaned = text.replace(/\D/g, "");
+
+    // format số điện thoại
+    if (cleaned.length > 3 && cleaned.length <= 6) {
+      cleaned = cleaned.replace(/(\d{3})(\d+)/, "$1 $2");
+    } 
+    else if (cleaned.length > 6) {
+      cleaned = cleaned.replace(/(\d{3})(\d{3})(\d+)/, "$1 $2 $3");
+    }
+
+    setPhone(cleaned);
+  };
+
   const validatePhone = () => {
 
-    const phoneRegex = /^(0[3|5|7|8|9])[0-9]{8}$/;
+    // bỏ khoảng trắng để kiểm tra
+    const phoneNumber = phone.replace(/\s/g, "");
 
-    if (phone === "") {
+    const phoneRegex = /^(0[35789])[0-9]{8}$/;
+
+    if (phoneNumber === "") {
       alert("Vui lòng nhập số điện thoại");
       return;
     }
 
-    if (!phoneRegex.test(phone)) {
+    if (!phoneRegex.test(phoneNumber)) {
       alert("Số điện thoại không đúng định dạng!");
       return;
     }
@@ -40,7 +59,7 @@ export default function SignIn() {
         placeholder="Nhập số điện thoại của bạn"
         keyboardType="numeric"
         value={phone}
-        onChangeText={(text) => setPhone(text)}
+        onChangeText={handlePhoneChange}
       />
 
       <TouchableOpacity style={styles.button} onPress={validatePhone}>
@@ -54,12 +73,10 @@ export default function SignIn() {
 const styles = StyleSheet.create({
 
   container: {
-    
-    
     flex: 1,
-  justifyContent: "center",
-  padding: 20,
-  backgroundColor: "#fff"
+    justifyContent: "center",
+    padding: 20,
+    backgroundColor: "#fff"
   },
 
   title: {
