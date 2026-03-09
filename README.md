@@ -10,6 +10,6 @@ Sử dụng màn hình SignIn đã thiết kế giao diện ở bài 2. Bổ sun
 
 ## Hình ảnh kết quả chạy ứng dụng
 
-![Kết quả](nhapsai.jpg) 
-![Kết quả](nhapdung.jpg) 
+![Kết quả](start.jpg) 
+![Kết quả](result.jpg) 
 
